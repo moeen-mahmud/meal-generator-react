@@ -1,0 +1,29 @@
+main {
+  margin-top: 4rem;
+  padding: 0 5rem;
+  font-family: "Maven Pro", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.meal-info img {
+  width: 300px;
+}
+
+.meal-instruction {
+  max-width: 50%;
+}
+
+.meal-instruction p {
+  line-height: 1.5;
+  font-weight: 800;
+}
+
+.meal-instruction p::before {
+  content: "Description: ";
+  font-size: 1.1rem;
+}

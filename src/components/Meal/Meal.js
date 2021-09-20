@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Suggested from "../Suggested/Suggested";
+import "./Meal.css";
 
 const Meal = () => {
   const [meal, setMeal] = useState([]);
@@ -11,7 +12,7 @@ const Meal = () => {
   };
 
   return (
-    <div>
+    <div className="meal">
       <button onClick={handleClick}>Click Me!</button>
       <Suggested meal={meal}></Suggested>
     </div>
