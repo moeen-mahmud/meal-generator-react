@@ -1,2 +1,17 @@
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Maven+Pro&family=Trykker&display=swap");
+
+.App {
+  font-family: "Trykker", serif;
+  font-size: 15px;
+  display: grid;
+  place-items: center;
+}
+
+.App .main-title {
+  line-height: 0;
+}
+
+.App .sub-title {
+  line-height: 0;
+}

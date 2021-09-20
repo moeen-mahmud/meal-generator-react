@@ -1,44 +1,16 @@
-import { useEffect, useState } from "react";
 import "./App.css";
+import Meal from "./components/Meal/Meal";
 
 // const URL = "https://www.themealdb.com/api/json/v1/1/random.php";
 
 function App() {
   return (
     <div className="App">
-      <button onClick={clickHandle}>Click</button>
+      <h1 className="main-title">Hungry?</h1>
+      <h3 className="sub-title">Click below and get yourself some meal</h3>
       <Meal></Meal>
     </div>
   );
-}
-
-function Meal() {
-  const [meal, setMeal] = useState([]);
-  useEffect(() => {
-    fetch(clickHandle)
-      .then((res) => res.json())
-      .then((data) => setMeal(data.meals[0]));
-  }, []);
-
-  return (
-    <div className="wrapper">
-      <div className="left-side">
-        <figure>
-          <img src={meal.strMealThumb} alt="" />
-          <figcaption>
-            <p>Category: {meal.strCategory}</p>
-            <p>Origin: {meal.strArea}</p>
-          </figcaption>
-        </figure>
-      </div>
-      <div className="right-side"></div>
-    </div>
-  );
-}
-
-function clickHandle() {
-  const URL = "https://www.themealdb.com/api/json/v1/1/random.php";
-  return URL;
 }
 
 export default App;
