@@ -4,14 +4,21 @@
 .App {
   font-family: "Trykker", serif;
   font-size: 15px;
+  padding: 4rem;
   display: grid;
   place-items: center;
 }
 
 .App .main-title {
   line-height: 0;
+  font-family: "Comfortaa", cursive;
+  font-size: 4rem;
+  color: #6047ce;
 }
 
 .App .sub-title {
   line-height: 0;
+  font-family: "Maven Pro", sans-serif;
+  font-style: italic;
+  color: #ee5555;
 }
