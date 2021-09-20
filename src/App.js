@@ -1,8 +1,7 @@
 import "./App.css";
 import Meal from "./components/Meal/Meal";
 
-// const URL = "https://www.themealdb.com/api/json/v1/1/random.php";
-
+// Main React Container
 function App() {
   return (
     <div className="App">

@@ -1,7 +1,9 @@
+// Import Necessary Files
 import React, { useState } from "react";
 import Suggested from "../Suggested/Suggested";
 import "./Meal.css";
 
+// Meal Component
 const Meal = () => {
   const [meal, setMeal] = useState([]);
 

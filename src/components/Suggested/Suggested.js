@@ -1,6 +1,8 @@
+// Import Necessary Files
 import React from "react";
 import "./Suggested.css";
 
+// Suggestion Component
 const Suggested = (props) => {
   const {
     strMeal,
