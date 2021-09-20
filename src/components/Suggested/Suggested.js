@@ -9,8 +9,6 @@ const Suggested = (props) => {
     strArea,
     strMealThumb,
     strInstructions,
-    strSource,
-    strYoutube,
   } = props.meal;
 
   return (
@@ -18,18 +16,14 @@ const Suggested = (props) => {
       <div className="wrapper">
         <div className="meal-info">
           <img src={strMealThumb} alt={strMeal} />
-          <h3 className="meal-title">{strMeal}</h3>
-          <p>{strCategory}</p>
-          <p>{strArea}</p>
         </div>
         <div className="meal-instruction">
+          <h1 className="meal-title">{strMeal}</h1>
+          <small className="category">{strCategory}</small>
+          <small className="area">{strArea}</small>
           <p className="meal-desc">{strInstructions}</p>
+          <small className="tag">{strTags}</small>
         </div>
-      </div>
-      <div className="footer">
-        <small className="source">{strSource}</small>
-        <small className="source">{strYoutube}</small>
-        <p className="tag">{strTags}</p>
       </div>
     </main>
   );
