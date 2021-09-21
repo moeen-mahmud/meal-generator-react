@@ -88,3 +88,21 @@ main {
 .ingredients .measure p {
   text-align: right;
 }
+
+.sources {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sources > div > a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #f15c5c;
+  font-size: 1.5rem;
+}
+
+.sources > div > a:hover {
+  color: #f04444;
+}

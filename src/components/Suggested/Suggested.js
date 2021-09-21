@@ -11,6 +11,8 @@ const Suggested = (props) => {
     strArea,
     strMealThumb,
     strInstructions,
+    strYoutube,
+    strSource,
   } = props.meal;
 
   const ingredients = Object.values(props.meal).slice(9, 29);
@@ -41,7 +43,17 @@ const Suggested = (props) => {
           <small className="category">{strCategory}</small>
           <small className="area">{strArea}</small>
           <p className="meal-desc">{strInstructions}</p>
-          <small className="tag">{strTags ? strTags : "Ordinary"}</small>
+          <div className="sources">
+            <small className="tag">{strTags ? strTags : "Ordinary"}</small>
+            <div>
+              <a href={strSource}>
+                <i class="fas fa-globe"></i>
+              </a>
+              <a href={strYoutube}>
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </main>
