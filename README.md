@@ -22,7 +22,7 @@
 
 ### Screenshot
 
-![Desktop-View](./screenshot/Random-Meal-Generator-GIF.gif)
+![Desktop-View](./screenshot/Random-Meal-Generator.gif)
 
 ### Links
 
