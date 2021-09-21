@@ -72,9 +72,19 @@ main {
 .ingredients {
   display: flex;
   gap: 10px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-.ingredients > p:nth-child(even) {
+.ingredients > .ingredient > h3,
+.ingredients > .measure > h3 {
+  font-size: 1.5rem;
+}
+
+.ingredients > .ingredient > p,
+.ingredients > .measure > p {
+  font-size: 1.1rem;
+}
+
+.ingredients .measure p {
   text-align: right;
 }

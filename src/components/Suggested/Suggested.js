@@ -22,13 +22,13 @@ const Suggested = (props) => {
         <div className="meal-info">
           <img src={strMealThumb} alt={strMeal} />
           <div key={strMeal} className="ingredients">
-            <div>
+            <div className="ingredient">
               <h3>Ingredients</h3>
               {ingredients.map((ingredient) => (
                 <p>{ingredient}</p>
               ))}
             </div>
-            <div>
+            <div className="measure">
               <h3>Measurements</h3>
               {measures.map((measure) => (
                 <p>{measure}</p>
