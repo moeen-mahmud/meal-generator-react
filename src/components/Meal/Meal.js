@@ -1,5 +1,5 @@
 // Import Necessary Files
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Suggested from "../Suggested/Suggested";
 import "./Meal.css";
 
@@ -12,6 +12,10 @@ const Meal = () => {
       .then((res) => res.json())
       .then((data) => setMeal(data.meals[0]));
   };
+
+  useEffect(() => {
+    handleClick();
+  }, []);
 
   return (
     <div className="meal">
